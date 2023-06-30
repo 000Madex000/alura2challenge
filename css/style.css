@@ -460,8 +460,8 @@ footer {
     }
 }
 
-@media (max-width: 390px) {
-
+@media (max-width: 600px) {
+    
     .menu_bar {
         width: 100%;
     }
@@ -498,7 +498,7 @@ footer {
         margin: 0 auto;
         padding: 0;
         display: block;
-        padding-top: 20rem;
+        padding-top: 40rem;
     }
     .biografia_texto {
         overflow: hidden;
