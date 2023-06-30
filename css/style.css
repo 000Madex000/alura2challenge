@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700&display=swap');
+:root {
+    --oscuro: #050605;
+    --marron: #621708;
+    --marronRojiso: #941b0c;
+    --rojoNaranja: #bc3908;
+    --ocreAmarillo: #f6aa1c;
+    --blanco: #ffffff;
+    --contenedor: #002815;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+/*UTILITARIOS*/
+h2{
+    color: var(--ocreAmarillo);
+    text-transform: uppercase;
+    font-size: 4rem;
+    padding: 2rem;
+    text-align: center;
+}
+/*HEADER*/
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/carbono.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(184deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 56%);
+    
+}
+
+/*NAVEGACION*/
+.nav {
+    display: flex;
+    width: 90%;
+    height: 8rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.nav_link,
+.cv_link {
+    text-decoration: none;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    color: var(--blanco);
+    margin: 0 2.5rem;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.5s;
+}
+.nav_link:hover{
+    color: var(--ocreAmarillo);
+}
+.cv {
+    border: 1px solid var(--ocreAmarillo);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 0 2rem;
+}
+
+.cv_link {}
+
+/*DISPLAY*/
+.display {
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+    
+    gap: 4rem;
+}
+
+.informacion {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.texto {
+    font-size: 8.5rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--blanco);
+    text-transform: capitalize;
+    margin: 0 2rem;
+    margin-top: 8rem;
+    letter-spacing: 0.8rem;
+}
+
+.informacion p {
+    font-size: 2rem;
+    color: var(--ocreAmarillo);
+    text-transform: uppercase;
+    margin: 0;
+    margin: 0 2rem;
+}
+
+.imagen_redes-sociales {
+    width: 25rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 2rem;
+    
+}
+
+
+.redes_link {}
+
+.redes_link__img {
+    width: 3rem;
+    transition: all 0.5s;
+}
+.redes_link__img:hover{
+    transform: scale(2);
+}
+.imagen {
+    width: 50%;
+    
+}
+
+.card {
+  width: 70%;
+  height: 100%;
+  background-color: rgba(216, 243, 12, 0.223);
+  border-radius: 3.5rem 3.5rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8rem;
+  backdrop-filter: blur(10rem);
+  margin: 0 auto;
+  
+}
+.card_img  {
+    width: 30rem;
+    height: 30rem;
+    margin: auto;
+    
+}
+.card_imagen_rostro{
+    width: 100%;
+    border-radius: 50%;
+}
+.card_redes{
+}
+/*MAIN*/
+main {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/fondo_main.jpg);
+}
+/*BIOGRAFIA*/
+.biografia{
+    width: 50rem;
+    padding: 5rem;
+    margin: 0 auto;
+    
+}
+.biografia_titulo{
+border: 1px solid var(--ocreAmarillo);
+border-radius: 1rem 1rem 0 0;
+margin: 0;
+font-size: 3rem;
+color: var(--ocreAmarillo);
+height: 6rem;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.biografia_texto{
+    border: 1px solid var(--ocreAmarillo);
+    margin: 0;
+    color: var(--ocreAmarillo);
+    font-size: 1.8rem;
+    height: 20rem;
+    text-align: center;
+    display: flex;
+justify-content: center;
+align-items: center;
+padding: 0 2rem;
+}
+.svg_meditando{
+    opacity: 60%;
+}
+/*HOBBIT*/
+
+.hobbies_card{
+ width: 50%;
+ display: flex;
+ justify-content: space-between;
+ margin: 0 auto;
+}
+.hobbies_card_lp{
+ 
+ width: 8rem;
+}
+.hobbies_img{
+   width: 100%;  
+}
+.h_parrafo{
+    color: var(--ocreAmarillo);
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+/*SKILL*/
+.skill,.hobbies,.proyecto,.formulario{
+ width: 80%;
+ margin: 0 auto;
+}
+.skill_card{
+ display: flex;
+ justify-content: space-between;
+ 
+}
+.skill_card_lp{
+ width:20rem;
+ transition: all 0.5s;
+}
+.skill_card_lp:hover{
+    transform: scale(1.2);
+}
+.skill_img{
+    width: 100%;
+}
+
+/*PROYECTOS*/
+.proyecto{
+    height: 40rem;
+}
+.proyecto_card{
+ display: flex;
+ justify-content: space-between;
+ margin: 3rem auto;
+}
+.proyecto_card_lp{
+ display: block;
+  width: 40rem;
+ margin: 1rem 3rem;
+ transition: all 0.5s;
+}
+.proyecto_card_lp:hover{
+    border: 1px solid var(--ocreAmarillo);
+    padding: 2rem;
+    transform: scale(1.2);
+}
+.proyecto_img{
+width: 100%;
+}
+/*FORMULARIO*/
+.formulario{
+    padding-bottom: 5rem ;
+}
+.formulario_box{
+    display: block;
+    width: 50%;
+    border: 1px solid var(--ocreAmarillo);
+    margin: 0 auto;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    
+}
+.formulario_label{
+    display: block;
+  font-size: 2rem;
+  color: var(--ocreAmarillo);
+  text-transform: capitalize;
+  margin: 1rem;
+
+}
+.formulario_input{
+ display: block;
+ width: 100%;
+ outline: none;
+ border: 1px solid var(--ocreAmarillo);
+ border-radius: 1rem;
+ background-color: transparent;
+ padding: 1.5rem;
+ height: 5rem;
+ font-size: 2rem;
+ color: var(--blanco);
+ text-transform: capitalize;
+ writing-mode: horizontal-tb;
+ box-sizing: border-box;
+}
+.textarea{
+    height: 10rem;
+}
+.formulario_btn{
+ width: 40rem;
+ margin: 2rem auto;
+}
+.btn{
+    display: block;
+ border: 1px solid var(--ocreAmarillo);
+ width: 20rem;
+ height: 3rem;
+ margin: 0 auto;
+ background-color: transparent;
+ border-radius: 1rem;
+ color: var(--ocreAmarillo);
+ font-size: 2rem;
+ text-transform: capitalize;
+ cursor: pointer;
+}
+
+/*FOOTER*/
+footer{
+    background-color: var(--oscuro);
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+.text_fo{
+    color: var(--ocreAmarillo);
+    font-size: 1.5rem;
+   text-transform: capitalize;
+    margin: 0;
+}
+/*-----phono-------*/
+@media (max-width: 768px){
+    .open{
+        display: none;
+    }
+    .enlaces{
+        display: none;
+    }
+    .menu_contenedor{
+        display: none;
+    }
+    .menu_bar{
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: var(--ocreAmarillo);
+        width: 50rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+
+    }
+    .tr{
+        transition: all 1s;
+    }
+    .nav_bar{
+        color: var(--blanco);
+        text-decoration: none;
+        font-size: 3rem;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        margin: 2rem;
+        transition: all 0.5s;
+    }
+    .nav_bar:hover{
+        color: var(--marron);
+        transform: scale(1.2);
+        
+    }
+    .icon{
+        color: var(--ocreAmarillo);
+        font-size: 5rem;
+        
+    }
+    .icon_close{
+        font-size: 5rem;
+        color: var(--marron);
+        position: absolute;
+        top: 5rem;
+        right: 8rem;
+        cursor: pointer;
+
+    }
+    .display{
+        flex-direction: column;
+    }
+    .informacion{
+        width: 100%;
+        align-items: center;
+        
+    }
+    .texto{
+        font-size: 8rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .card{
+        margin-top: 2rem;
+        height: 100%;
+        width: 100%;
+        
+        
+    }
+    .imagen{
+        width: 100%;
+    }
+    .card_img{
+        width: 20rem;
+        height: 20rem;
+    }
+}
+@media (max-width: 375px) {
+    
+    .menu_bar{
+        width: 100%;
+    }
+    .display{
+        display: flex;
+        flex-direction: column;
+        height: 80rem;
+        
+    }
+    .informacion{
+        width: 100%;
+        align-items: center;
+        
+    }
+    .texto{
+        font-size: 4rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .card{
+        width: 100%;
+        height: 100%;
+    }
+    .imagen{
+        width: 100%;
+        display: block;
+    }
+    .card_img{
+        width: 20rem;
+        height: 20rem;
+    }
+    .biografia{
+        width: 30rem;
+        margin: 0 auto;
+        padding: 0;
+        display: block;
+        padding-top: 30rem;
+      
+    }
+    .biografia_texto{
+        overflow: hidden;
+    }
+    .bio_cont{
+        margin: 0 auto;
+    }
+    .hobbies_card{
+        width: 100%;
+    }
+    .hobbies_card_lp{
+        margin: 0 2rem;
+    }
+    .proyecto{
+        height: 60rem;
+    }
+    .proyecto_card{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .proyecto_card_lp{
+        width: 20rem;
+    }
+    .formulario{
+        width: 100%;
+    }
+    .formulario_box{
+        width: 30rem;
+    }
+    .formulario_btn{
+        margin: 0 auto;
+    }
+    .btn_phone{
+        width: 15rem;
+        margin: 0 auto;
+        margin: 2rem 0;
+    }
+ footer{
+        padding: 3rem;
+    }
+  }
