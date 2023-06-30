@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700&display=swap');
+
 :root {
     --oscuro: #050605;
     --marron: #621708;
@@ -13,14 +14,16 @@ html {
     font-size: 62.5%;
     box-sizing: border-box;
 }
+
 /*UTILITARIOS*/
-h2{
+h2 {
     color: var(--ocreAmarillo);
     text-transform: uppercase;
     font-size: 4rem;
     padding: 2rem;
     text-align: center;
 }
+
 /*HEADER*/
 .header {
     width: 100%;
@@ -28,8 +31,8 @@ h2{
     background-image: url(../img/carbono.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background: linear-gradient(184deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 56%);
-    
+    background: linear-gradient(184deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 56%);
+
 }
 
 /*NAVEGACION*/
@@ -52,7 +55,8 @@ h2{
     font-family: 'Roboto', sans-serif;
     transition: all 0.5s;
 }
-.nav_link:hover{
+
+.nav_link:hover {
     color: var(--ocreAmarillo);
 }
 .cv {
@@ -62,15 +66,12 @@ h2{
     margin: 0 2rem;
 }
 
-.cv_link {}
-
 /*DISPLAY*/
 .display {
     width: 90%;
     height: 80%;
     margin: 0 auto;
     display: flex;
-    
     gap: 4rem;
 }
 
@@ -80,7 +81,7 @@ h2{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 0 auto;
 }
 
@@ -107,75 +108,82 @@ h2{
     display: flex;
     justify-content: space-between;
     margin: 3rem 2rem;
-    
+
 }
-
-
-.redes_link {}
 
 .redes_link__img {
     width: 3rem;
     transition: all 0.5s;
 }
-.redes_link__img:hover{
+
+.redes_link__img:hover {
     transform: scale(2);
 }
+
 .imagen {
     width: 50%;
-    
+
 }
 
 .card {
-  width: 70%;
-  height: 100%;
-  background-color: rgba(216, 243, 12, 0.223);
-  border-radius: 3.5rem 3.5rem 1rem 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  gap: 8rem;
-  backdrop-filter: blur(10rem);
-  margin: 0 auto;
-  
+    width: 70%;
+    height: 100%;
+    background-color: rgba(216, 243, 12, 0.223);
+    border-radius: 3.5rem 3.5rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8rem;
+    backdrop-filter: blur(10rem);
+    margin: 0 auto;
+
 }
-.card_img  {
+
+.card_img {
     width: 30rem;
     height: 30rem;
     margin: auto;
-    
+
 }
-.card_imagen_rostro{
+
+.card_imagen_rostro {
     width: 100%;
     border-radius: 50%;
 }
-.card_redes{
+
+.contenedor_menu_bar{
+    display: none;
 }
+
 /*MAIN*/
 main {
     width: 100%;
     height: 100%;
     background-image: url(../img/fondo_main.jpg);
 }
+
 /*BIOGRAFIA*/
-.biografia{
+.biografia {
     width: 50rem;
     padding: 5rem;
     margin: 0 auto;
-    
+
 }
-.biografia_titulo{
-border: 1px solid var(--ocreAmarillo);
-border-radius: 1rem 1rem 0 0;
-margin: 0;
-font-size: 3rem;
-color: var(--ocreAmarillo);
-height: 6rem;
-display: flex;
-justify-content: center;
-align-items: center;
+
+.biografia_titulo {
+    border: 1px solid var(--ocreAmarillo);
+    border-radius: 1rem 1rem 0 0;
+    margin: 0;
+    font-size: 3rem;
+    color: var(--ocreAmarillo);
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.biografia_texto{
+
+.biografia_texto {
     border: 1px solid var(--ocreAmarillo);
     margin: 0;
     color: var(--ocreAmarillo);
@@ -183,137 +191,161 @@ align-items: center;
     height: 20rem;
     text-align: center;
     display: flex;
-justify-content: center;
-align-items: center;
-padding: 0 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
 }
-.svg_meditando{
+
+.svg_meditando {
     opacity: 60%;
 }
+
 /*HOBBIT*/
 
-.hobbies_card{
- width: 50%;
- display: flex;
- justify-content: space-between;
- margin: 0 auto;
+.hobbies_card {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
 }
-.hobbies_card_lp{
- 
- width: 8rem;
+
+.hobbies_card_lp {
+
+    width: 8rem;
 }
-.hobbies_img{
-   width: 100%;  
+
+.hobbies_img {
+    width: 100%;
 }
-.h_parrafo{
+
+.h_parrafo {
     color: var(--ocreAmarillo);
     text-align: center;
     font-size: 1.5rem;
     text-transform: capitalize;
 }
+
 /*SKILL*/
-.skill,.hobbies,.proyecto,.formulario{
- width: 80%;
- margin: 0 auto;
+.skill,
+.hobbies,
+.proyecto,
+.formulario {
+    width: 80%;
+    margin: 0 auto;
 }
-.skill_card{
- display: flex;
- justify-content: space-between;
- 
+
+.skill_card {
+    display: flex;
+    justify-content: space-between;
+
 }
-.skill_card_lp{
- width:20rem;
- transition: all 0.5s;
+
+.skill_card_lp {
+    width: 20rem;
+    transition: all 0.5s;
 }
-.skill_card_lp:hover{
+
+.skill_card_lp:hover {
     transform: scale(1.2);
 }
-.skill_img{
+
+.skill_img {
     width: 100%;
 }
 
 /*PROYECTOS*/
-.proyecto{
+.proyecto {
     height: 40rem;
 }
-.proyecto_card{
- display: flex;
- justify-content: space-between;
- margin: 3rem auto;
+
+.proyecto_card {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem auto;
 }
-.proyecto_card_lp{
- display: block;
-  width: 40rem;
- margin: 1rem 3rem;
- transition: all 0.5s;
+
+.proyecto_card_lp {
+    display: block;
+    width: 40rem;
+    margin: 1rem 3rem;
+    transition: all 0.5s;
 }
-.proyecto_card_lp:hover{
+
+.proyecto_card_lp:hover {
     border: 1px solid var(--ocreAmarillo);
     padding: 2rem;
     transform: scale(1.2);
 }
-.proyecto_img{
-width: 100%;
+
+.proyecto_img {
+    width: 100%;
 }
+
 /*FORMULARIO*/
-.formulario{
-    padding-bottom: 5rem ;
+.formulario {
+    padding-bottom: 5rem;
 }
-.formulario_box{
+
+.formulario_box {
     display: block;
     width: 50%;
     border: 1px solid var(--ocreAmarillo);
     margin: 0 auto;
     padding: 1.5rem;
     border-radius: 1.5rem;
-    
-}
-.formulario_label{
-    display: block;
-  font-size: 2rem;
-  color: var(--ocreAmarillo);
-  text-transform: capitalize;
-  margin: 1rem;
 
 }
-.formulario_input{
- display: block;
- width: 100%;
- outline: none;
- border: 1px solid var(--ocreAmarillo);
- border-radius: 1rem;
- background-color: transparent;
- padding: 1.5rem;
- height: 5rem;
- font-size: 2rem;
- color: var(--blanco);
- text-transform: capitalize;
- writing-mode: horizontal-tb;
- box-sizing: border-box;
+
+.formulario_label {
+    display: block;
+    font-size: 2rem;
+    color: var(--ocreAmarillo);
+    text-transform: capitalize;
+    margin: 1rem;
+
 }
-.textarea{
+
+.formulario_input {
+    display: block;
+    width: 100%;
+    outline: none;
+    border: 1px solid var(--ocreAmarillo);
+    border-radius: 1rem;
+    background-color: transparent;
+    padding: 1.5rem;
+    height: 5rem;
+    font-size: 2rem;
+    color: var(--blanco);
+    text-transform: capitalize;
+    writing-mode: horizontal-tb;
+    box-sizing: border-box;
+}
+
+.textarea {
     height: 10rem;
 }
-.formulario_btn{
- width: 40rem;
- margin: 2rem auto;
+
+.formulario_btn {
+    width: 40rem;
+    margin: 2rem auto;
 }
-.btn{
+
+.btn {
     display: block;
- border: 1px solid var(--ocreAmarillo);
- width: 20rem;
- height: 3rem;
- margin: 0 auto;
- background-color: transparent;
- border-radius: 1rem;
- color: var(--ocreAmarillo);
- font-size: 2rem;
- text-transform: capitalize;
- cursor: pointer;
+    border: 1px solid var(--ocreAmarillo);
+    width: 20rem;
+    height: 3rem;
+    margin: 0 auto;
+    background-color: transparent;
+    border-radius: 1rem;
+    color: var(--ocreAmarillo);
+    font-size: 2rem;
+    text-transform: capitalize;
+    cursor: pointer;
 }
 
 /*FOOTER*/
-footer{
+footer {
     background-color: var(--oscuro);
     height: 3rem;
     display: flex;
@@ -321,24 +353,32 @@ footer{
     align-items: center;
     padding: 3rem;
 }
-.text_fo{
+
+.text_fo {
     color: var(--ocreAmarillo);
     font-size: 1.5rem;
-   text-transform: capitalize;
+    text-transform: capitalize;
     margin: 0;
 }
+
 /*-----phono-------*/
-@media (max-width: 768px){
-    .open{
+@media (max-width: 768px) {
+    .contenedor_menu_bar{
+        display: block;
+    }
+    .open {
         display: none;
     }
-    .enlaces{
+
+    .enlaces {
         display: none;
     }
-    .menu_contenedor{
+
+    .menu_contenedor {
         display: none;
     }
-    .menu_bar{
+
+    .menu_bar {
         position: absolute;
         top: 0;
         right: 0;
@@ -352,10 +392,12 @@ footer{
         z-index: 10;
 
     }
-    .tr{
+
+    .tr {
         transition: all 1s;
     }
-    .nav_bar{
+
+    .nav_bar {
         color: var(--blanco);
         text-decoration: none;
         font-size: 3rem;
@@ -364,17 +406,20 @@ footer{
         margin: 2rem;
         transition: all 0.5s;
     }
-    .nav_bar:hover{
+
+    .nav_bar:hover {
         color: var(--marron);
         transform: scale(1.2);
-        
+
     }
-    .icon{
+
+    .icon {
         color: var(--ocreAmarillo);
         font-size: 5rem;
-        
+
     }
-    .icon_close{
+
+    .icon_close {
         font-size: 5rem;
         color: var(--marron);
         position: absolute;
@@ -383,25 +428,28 @@ footer{
         cursor: pointer;
 
     }
-    .display{
+
+    .display {
         flex-direction: column;
     }
-    .informacion{
+
+    .informacion {
         width: 100%;
         align-items: center;
-        
+
     }
-    .texto{
+
+    .texto {
         font-size: 8rem;
         text-align: center;
         margin-bottom: 2rem;
     }
-    .card{
+
+    .card {
         margin-top: 2rem;
         height: 100%;
         width: 100%;
-        
-        
+   
     }
     .imagen{
         width: 100%;
@@ -411,85 +459,85 @@ footer{
         height: 20rem;
     }
 }
-@media (max-width: 375px) {
-    
-    .menu_bar{
+
+@media (max-width: 390px) {
+
+    .menu_bar {
         width: 100%;
     }
-    .display{
+    .display {
         display: flex;
         flex-direction: column;
         height: 80rem;
-        
+
     }
-    .informacion{
+    .informacion {
         width: 100%;
         align-items: center;
-        
+
     }
-    .texto{
-        font-size: 4rem;
+ .texto {
+        font-size: 6rem;
         text-align: center;
         margin-bottom: 2rem;
     }
-    .card{
+    .card {
         width: 100%;
         height: 100%;
     }
-    .imagen{
+    .imagen {
         width: 100%;
         display: block;
     }
-    .card_img{
+  .card_img {
         width: 20rem;
         height: 20rem;
     }
-    .biografia{
+    .biografia {
         width: 30rem;
         margin: 0 auto;
         padding: 0;
         display: block;
-        padding-top: 30rem;
-      
+        padding-top: 20rem;
     }
-    .biografia_texto{
+    .biografia_texto {
         overflow: hidden;
     }
-    .bio_cont{
+    .bio_cont {
         margin: 0 auto;
     }
-    .hobbies_card{
+    .hobbies_card {
         width: 100%;
     }
-    .hobbies_card_lp{
+    .hobbies_card_lp {
         margin: 0 2rem;
     }
-    .proyecto{
+    .proyecto {
         height: 60rem;
     }
-    .proyecto_card{
+    .proyecto_card {
         width: 100%;
         flex-direction: column;
         align-items: center;
     }
-    .proyecto_card_lp{
+    .proyecto_card_lp {
         width: 20rem;
     }
-    .formulario{
+    .formulario {
         width: 100%;
     }
-    .formulario_box{
+    .formulario_box {
         width: 30rem;
     }
-    .formulario_btn{
+    .formulario_btn {
         margin: 0 auto;
     }
-    .btn_phone{
+    .btn_phone {
         width: 15rem;
         margin: 0 auto;
         margin: 2rem 0;
     }
- footer{
+    footer {
         padding: 3rem;
     }
-  }
+}
